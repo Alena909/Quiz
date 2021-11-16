@@ -1,0 +1,47 @@
+<%- include('../partials/head.ejs') %>
+
+<body>
+    <div class="container main">
+        <div class="header">
+            <h1 id="currentTest"><%= pageName %></h1>
+            <p>Test your skills</p>
+            <%- include('../partials/nav.ejs') %>
+        </div>
+        <div class="options" id="questions">
+            <div class="count">
+                <h2>You have <span class='total_questions'></span> questions</h2>
+            </div>
+
+            <div class="card" id="card">
+                <h3 id="question">Question text</h3>
+                <hr>
+                <ul>
+                    <li>
+                        <input type="radio" name="answer" id="a" class="answer">
+                        <label for="a" id="a_text">Question</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="answer" id="b" class="answer">
+                        <label for="b" id="b_text">Question</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="answer" id="c" class="answer">
+                        <label for="c" id="c_text">Question</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="answer" id="d" class="answer">
+                        <label for="d" id="d_text">Question</label>
+                    </li>
+                </ul>
+            </div>
+            <button class="btn" id="btn_card">Select</button>
+
+
+        </div>
+        <%- include('../partials/footer.ejs') %>
+    </div>
+
+    <script src="/scripts/quiz.js"></script>
+</body>
+
+</html>

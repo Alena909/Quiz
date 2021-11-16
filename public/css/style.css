@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Ubuntu", sans-serif;
+  margin: 0;
+}
+.container {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  padding-bottom: 10px;
+}
+.container.main {
+  background-image: url(../images/geometry-gfb45467ab_1920.jpg);
+}
+.container.math {
+  background-image: url(../images/math-work-4711302_1920.jpg);
+}
+.container.biology {
+  background-image: url(../images/bacteria-ge8bcddb27_1920.jpg);
+}
+.container.socialstudies {
+  background-image: url(../images/compass-g8e372dd80_1920.jpg);
+}
+.container.computerscience {
+  background-image: url(../images/source-g5e03fa362_1920.jpg);
+}
+h1 {
+  font-size: 4.5rem;
+  color: red;
+  margin-bottom: 0;
+}
+.header {
+  text-align: center;
+  background-color: #fff;
+  padding: 20px 0;
+  margin-top: 80px;
+}
+nav {
+  position: fixed;
+  background-color: #222;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+nav ul {
+  list-style-type: none;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 7px 15px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+nav a:hover,
+nav a:active {
+  color: red;
+}
+
+.options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border: 2px solid red;
+  border-radius: 4px;
+  width: 70%;
+  margin: 5% auto;
+  max-width: 1000px;
+}
+.subject {
+  background-color: #fff;
+  width: 70%;
+  height: 40%;
+  border: 2px solid #555;
+  border-radius: 4px;
+  margin: 30px;
+  text-align: center;
+  padding: 20px;
+  height: 150px;
+  letter-spacing: 1px;
+  color: #555;
+}
+.subject h2 {
+  text-shadow: 1px 1px 1px white, 2px 1px 2px red;
+  color: #333;
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+.btn {
+  padding: 7px 10px;
+  background-color: rgb(141, 138, 138);
+  border-radius: 5px;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+.btn:hover,
+#btn_card:hover {
+  background-color: red;
+  color: #fff;
+  transform: scale(0.9);
+  border: 1px red solid;
+}
+.btn a {
+  text-decoration: none;
+  color: #fff;
+}
+footer {
+  text-align: center;
+  color: #fff;
+  background-color: #222;
+  padding: 15px 0;
+}
+footer a {
+  text-decoration: none;
+  color: #fff;
+}
+footer a:hover {
+  color: red;
+}
+#questions {
+  flex-direction: column;
+  width: 95%;
+}
+.count h2 {
+  background-color: red;
+  color: #fff;
+  font-size: 2rem;
+  padding: 20px;
+  text-align: center;
+  border-radius: 4px;
+}
+.card {
+  background-color: #fff;
+  border-radius: 5px;
+  width: 90%;
+  height: 50%;
+  max-width: 600px;
+  padding: 10px;
+  overflow-y: scroll;
+}
+.card h3 {
+  text-align: center;
+}
+.card ul {
+  list-style-type: none;
+  padding: 0;
+}
+.card ul li {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+.card ul li label {
+  cursor: pointer;
+}
+#btn_card {
+  background-color: rgb(141, 138, 138);
+  color: #fff;
+  display: block;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-family: inherit;
+  padding: 7px 10px;
+  margin-top: 15px;
+  letter-spacing: 1px;
+}
+#btn_card.hide {
+  display: none;
+}
+#card.card button {
+  padding: 10px;
+  border-radius: 8px;
+  background-color: red;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 40px;
+  font-size: 18px;
+}
+
+@media screen and (min-width: 400px) and (max-width: 860px) {
+}
+@media screen and (min-width: 860px) {
+  body {
+    height: 100vh;
+  }
+  .header {
+    margin-top: 30px;
+  }
+  nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .subject {
+    width: 40%;
+    height: 25%;
+    font-size: 0.8em;
+  }
+  .container {
+    height: 100%;
+  }
+  .options {
+    height: 60%;
+  }
+}

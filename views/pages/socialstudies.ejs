@@ -1,0 +1,32 @@
+<%- include('../partials/head.ejs') %>
+
+<body>
+    <div class="container socialstudies">
+        <div class="header">
+            <h1><%= pageName %></h1>
+            <p>Test your skills</p>
+            <%- include('../partials/nav.ejs') %>
+        </div>
+        <div class="options">
+            <div class="subject">
+                <h2>Test</h2>
+                <button class="btn"><a href="/question?category=socialstudies&test=test0">Select</a></button>
+            </div>
+            <div class="subject">
+                <h2>Test</h2>
+                <button class="btn"><a href="/question?category=socialstudies&test=test1">Select</a></button>
+            </div>
+            <div class="subject">
+                <h2>Test</h2>
+                <button class="btn"><a href="/question?category=socialstudies&test=test2">Select</a></button>
+            </div>
+            <div class="subject">
+                <h2>Test</h2>
+                <button class="btn"><a href="/question?category=socialstudies&test=test3">Select</a></button>
+            </div>
+        </div>
+        <%- include('../partials/footer.ejs') %>
+    </div>
+</body>
+
+</html>
