@@ -16,7 +16,7 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use(routes);
 
 app.use((req, res, next) => {
-  res.status(404).render("404", { pageTitle: "Page Not Found" });
+  res.status(404).render("pages/errorpage", { pageTitle: "Page Not Found" });
 });
 
 app.listen(3000, () => {
